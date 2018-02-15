@@ -172,8 +172,8 @@ module.exports = {
       'vertical-align',
       'visibility',
       'z-index'
-    ],  
-    'declaration-property-unit-whitelist': {    
+    ],
+    'declaration-property-unit-whitelist': {
       'font-size': [
         'rem',
         'px'
@@ -219,13 +219,13 @@ module.exports = {
       ]
     }],
     'selector-max-universal': 0,
-    // Ensure any defined symbols are prefixed with "mk-"
-    'custom-media-pattern': '^mk?-.+',
-    'custom-property-pattern': '^mk?-.+',
-    'selector-class-pattern': ['^mk?-.+', {
+    // Ensure any defined symbols are prefixed with "mat-"
+    'custom-media-pattern': '^mat?-.+',
+    'custom-property-pattern': '^mat?-.+',
+    'selector-class-pattern': ['^mat?-.+', {
       'resolveNestedSelectors': true
     }],
-    'selector-id-pattern': '^mk?-.+',
+    'selector-id-pattern': '^mat?-.+',
     'font-weight-notation': 'numeric',
     // http://www.paulirish.com/2010/the-protocol-relative-url/
     'function-url-no-scheme-relative': true,
@@ -234,7 +234,7 @@ module.exports = {
         '/^TODO:/',
         '/^FIXME:/'
       ], {
-        'severity': 'warning'  
+        'severity': 'warning'
       }
     ],
     'number-leading-zero': 'never',
@@ -244,18 +244,18 @@ module.exports = {
     'plugin/selector-bem-pattern': {
       'componentName': '^[a-z]+(?:-[a-z]+)*$',
       // <namespace>-<block>__<element>*--<modifier>*[<attribute>]*
-      'componentSelectors': '^\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$',
+      'componentSelectors': '^\.mat?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$',
       'ignoreSelectors': [
         '^fieldset',
         '^\[aria\-disabled=(?:.+)\]'
       ]
     },
 
-    'scss/dollar-variable-pattern': ['^_?mk-.+', {
+    'scss/dollar-variable-pattern': ['^_?mat-.+', {
       'ignore': 'local'
     }],
-    'scss/at-function-pattern': '^mk-.+',
-    'scss/at-mixin-pattern': '^mk-.+',
+    'scss/at-function-pattern': '^mat-.+',
+    'scss/at-mixin-pattern': '^mat-.+',
     'scss/selector-no-redundant-nesting-selector': true,
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-mixin-argumentless-call-parentheses': 'never'

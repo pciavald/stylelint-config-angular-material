@@ -1,22 +1,25 @@
 {
-  "name": "stylelint-config-material-kit",
+  "name": "stylelint-config-angular-material",
   "version": "1.0.0",
-  "description": "Shareable stylelint config for Material Kit",
+  "description": "Shareable stylelint config for Angular Material",
   "keywords": [
-    "material-kit",
+    "angular-material",
+    "angular",
+    "material",
+    "config",
     "stylelint",
     "stylelint-config"
   ],
-  "homepage": "https://github.com/webdenim/stylelint-config-material-kit",
+  "homepage": "https://github.com/pciavald/stylelint-config-angular-material",
   "bugs": {
-    "url": "https://github.com/webdenim/stylelint-config-material-kit/issues"
+    "url": "https://github.com/pciavald/stylelint-config-angular-material/issues"
   },
   "license": "MIT",
-  "author": "Webdenim",
+  "author": "pciavald",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webdenim/stylelint-config-material-kit.git"
+    "url": "git+https://github.com/pciavald/stylelint-config-angular-material.git"
   },
   "scripts": {
     "release": "standard-version --tag-prefix"

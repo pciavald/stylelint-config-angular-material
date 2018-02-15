@@ -1,11 +1,11 @@
-# stylelint-config-material-kit
+# stylelint-config-angular-material
 
-Shareable stylelint config for Material Kit.
+Shareable stylelint config for Angular Material.
 
 ## Installation
 
 ```bash
-npm install --save-dev stylelint-config-material-kit
+npm install --save-dev stylelint-config-angular-material
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ and add your [rules](https://stylelint.io/user-guide/rules) if needed.
 
 ```json
 {
-  "extends": "stylelint-config-material-kit",
+  "extends": "stylelint-config-angular-material",
   "ignoreFiles": [
     "node_modules/**/*",
     "dist/**/*"
@@ -31,7 +31,7 @@ and add your [rules](https://stylelint.io/user-guide/rules) if needed.
 ### Example usage with YAML config:
 
 ```yaml
-extends: stylelint-config-material-kit
+extends: stylelint-config-angular-material
 ignoreFiles:
   - node_modules/**/*
   - dist/**/*
@@ -48,20 +48,20 @@ Below are example rules for using custom component prefix. Replace "mk" with you
 ```json
 {
   "rules": {
-    "custom-media-pattern": "^mk?-.+",
-    "custom-property-pattern": "^mk?-.+",
-    "selector-class-pattern": ["^mk?-.+", {
+    "custom-media-pattern": "^mat?-.+",
+    "custom-property-pattern": "^mat?-.+",
+    "selector-class-pattern": ["^mat?-.+", {
       "resolveNestedSelectors": true
     }],
-    "selector-id-pattern": "^mk?-.+",
+    "selector-id-pattern": "^mat?-.+",
     "plugin/selector-bem-pattern": {
-      "componentSelectors": "^\\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\\[.+\\])*$"
+      "componentSelectors": "^\\.mat?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\\[.+\\])*$"
     },
-    "scss/dollar-variable-pattern": ["^_?mk-.+", {
+    "scss/dollar-variable-pattern": ["^_?mat-.+", {
       "ignore": "local"
     }],
-    "scss/at-function-pattern": "^mk-.+",
-    "scss/at-mixin-pattern": "^mk-.+"
+    "scss/at-function-pattern": "^mat-.+",
+    "scss/at-mixin-pattern": "^mat-.+"
   }
 }
 ```
@@ -70,17 +70,17 @@ Below are example rules for using custom component prefix. Replace "mk" with you
 
 ```yaml
 rules:
-  custom-media-pattern: ^mk?-.+
-  custom-property-pattern: ^mk?-.+
+  custom-media-pattern: ^mat?-.+
+  custom-property-pattern: ^mat?-.+
   selector-class-pattern:
-    - ^mk?-.+
+    - ^mat?-.+
     - resolveNestedSelectors: true
-  selector-id-pattern: ^mk?-.+
+  selector-id-pattern: ^mat?-.+
   plugin/selector-bem-pattern:
-    componentSelectors: ^\.mk?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
+    componentSelectors: ^\.mat?-{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:--[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
   scss/dollar-variable-pattern:
-    - ^_?mk-.+
+    - ^_?mat-.+
     - ignore: local
-  scss/at-function-pattern: ^mk-.+
-  scss/at-mixin-pattern: ^mk-.+
+  scss/at-function-pattern: ^mat-.+
+  scss/at-mixin-pattern: ^mat-.+
 ```
